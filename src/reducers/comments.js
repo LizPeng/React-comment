@@ -15,8 +15,8 @@ export default function(state, action) {
     case ADD_COMMENT : 
       //新增评论，...state.comments是浅拷贝，它们拷贝的都是对象引用而已
       return {  //这里出的bug
-        comments: [ ...state.comments, action.comment 
-      }
+        comments: [ ...state.comments, action.comment ]
+      } 
     case DELETE_COMMENT :
       //删除评论
       return {
